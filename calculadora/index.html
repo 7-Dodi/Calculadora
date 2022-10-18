@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="inter">
+                <form action="">
+                    <div class="inicio">
+                        <p id="resultado"></p>
+                        <button id="btn" onclick="apagar()">C</button>
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="7" onclick="inserir('7')">
+                        <input type="button" value="8" onclick="inserir('8')">
+                        <input type="button" value="9" onclick="inserir('9')">
+                        <input class="btn" type="button" value="/"  onclick="inserir('/')">
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="4" onclick="inserir('4')">
+                        <input type="button" value="5" onclick="inserir('5')">
+                        <input type="button" value="6" onclick="inserir('6')">
+                        <input class="btn" type="button" value="X"  onclick="inserir('*')">
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="1"  onclick="inserir('1')">
+                        <input type="button" value="2"  onclick="inserir('2')">
+                        <input type="button" value="3"  onclick="inserir('3')">
+                        <input class="btn" type="button" value="-"  onclick="inserir('-')">
+                    </div>
+                    <div class="botoes">
+                        <input type="button" value="0" onclick="inserir('0')">
+                        <input class="btn" type="button" value="."  onclick="inserir('.')">
+                        <input class="btn" type="button" value="=" onclick="calcular()">
+                        <input class="btn" type="button" value="+"  onclick="inserir('+')">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
